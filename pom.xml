@@ -8,13 +8,14 @@
   <groupId>com.bobsystem.webservice</groupId>
   <artifactId>web-service-exercise</artifactId>
   <version>1.0a</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>web-service-exercise</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jsp-api.version>2.3.1</jsp-api.version>
   </properties>
 
   <dependencies>
@@ -28,6 +29,13 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
       <version>3.2.14.RELEASE</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <version>${jsp-api.version}</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>

@@ -14,7 +14,7 @@ public class WsExample
     private static final String PUBLISH_ADDRESS = "http://localhost:8080/service/ws-test";
 
     //region publish
-    // 在这里发布时，不能不出 CFX 相关的 jar，会报错
+    // 在这里发布时，不能找到 CFX 相关的 jar，会报错
     public static void main(String[] args) {
 
         WsExample service = new WsExample();

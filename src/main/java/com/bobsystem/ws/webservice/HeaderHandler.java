@@ -2,9 +2,6 @@ package com.bobsystem.ws.webservice;
 
 import java.util.Set;
 import javax.xml.namespace.QName;
-import javax.xml.soap.SOAPElement;
-import javax.xml.soap.SOAPEnvelope;
-import javax.xml.soap.SOAPHeader;
 import javax.xml.soap.SOAPMessage;
 import javax.xml.ws.handler.MessageContext;
 import javax.xml.ws.handler.soap.SOAPHandler;
@@ -48,8 +45,7 @@ public class HeaderHandler
             // we just print out the SOAP message.
             SOAPMessage message = smc.getMessage();
             message.writeTo(System.out);
-            System.out.println("");
-
+            System.out.println();
         }
         catch (Exception ex) {
             ex.printStackTrace();
@@ -58,7 +54,7 @@ public class HeaderHandler
         return outbound;
     }
 
-    public Set getHeaders() {
+    public Set<QName> getHeaders() {
 
         // throw new UnsupportedOperationException("Not supported yet.");
         return null;
