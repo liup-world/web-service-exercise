@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:jaxws="http://cxf.apache.org/jaxws"
+			 xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://cxf.apache.org/jaxws
+         http://cxf.apache.org/schemas/jaxws.xsd"
+				 default-autowire="constructor">
+
+	<!-- 以下是 Web Service 与 Spring 集成配置 -->
+	<jaxws:endpoint address="/ws-test">
+		<jaxws:implementor>
+			<bean class="com.bobsystem.ws.webservice.WsExample" />
+		</jaxws:implementor>
+	</jaxws:endpoint>
+
+	<!-- 以下是 Web Service 客户端配置 可以实现自动注入 缺点：wsdl必须已经启动 才能启动本项目
+		命令空间后面必须有 "/"
+		在调用webService时，有时候需要在SOAP头中插入信息，比如鉴权信息。
+		使用 handlerResolver 属性来启用 Handler，所以需自定义一个类来实现HandlerResolver接口
+		<property name="handlerResolver" ref="hadlerHandlerResolver"/>
+
+	<bean id="bobsystem.service"
+				class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean"
+				abstract="true">
+		<property name="namespaceUri" value="http://webservice.ws.bobsystem.com/"/>
+		<property name="customProperties">
+			<map>
+				<entry key="com.sun.xml.ws.request.timeout" value="20000" />
+				<entry key="com.sun.xml.ws.connect.timeout" value="20000" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="wsExample" parent="bobsystem.service">
+		<property name="wsdlDocumentUrl" value="http://localhost:8080/service/ws-test?wsdl"/>
+		<property name="serviceInterface" value="com.bobsystem.ws.wsimportrt.IWsExample"/>
+		<property name="serviceName" value="WsExampleService"/>
+		<property name="portName" value="WsExamplePort"/>
+	</bean> -->
+</beans>
