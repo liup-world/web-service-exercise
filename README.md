@@ -59,8 +59,8 @@ You can also create a link to another note: (Note menu -> Copy Note Link -> Past
 - [ ] incomplete
 - [x] completed
 
-- [v] normal **formatting**, @mentions, #1234 refs
-- [ ] incomplete
+- (x) normal **formatting**, @mentions, #1234 refs
+- ( ) incomplete
 
 ### Inline LaTeX
 
