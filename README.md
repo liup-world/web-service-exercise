@@ -40,6 +40,9 @@ http://example.com
 You can also create a link to another note: (Note menu -> Copy Note Link -> Paste)
 [01 - Getting Started](quiver-note-url/D2A1CC36-CC97-4701-A895-EFC98EF47026)
 
+### Imgage
+![Greenplum](logo-greenplum.png)
+
 ### Tables
 
 | Tables        | Are           | Cool  |
@@ -55,6 +58,9 @@ You can also create a link to another note: (Note menu -> Copy Note Link -> Past
 - [ ] normal **formatting**, @mentions, #1234 refs
 - [ ] incomplete
 - [x] completed
+
+[ ] normal **formatting**, @mentions, #1234 refs
+[ ] incomplete
 
 ### Inline LaTeX
 
