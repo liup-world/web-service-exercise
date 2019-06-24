@@ -38,10 +38,10 @@ Markdown cells support standard Markdown syntax as well as GitHub Flavored Markd
 http://example.com
 
 You can also create a link to another note: (Note menu -> Copy Note Link -> Paste)
-[01 - Getting Started](quiver-note-url/D2A1CC36-CC97-4701-A895-EFC98EF47026)
+[01 - Getting Started](link-url)
 
 ### Imgage
-![Greenplum](logo-greenplum.png)
+![Greenplum](https://github.com/greenplum-db/gpdb/logo-greenplum.png)
 
 ### Tables
 
@@ -59,7 +59,7 @@ You can also create a link to another note: (Note menu -> Copy Note Link -> Past
 - [ ] incomplete
 - [x] completed
 
-- [ ] normal **formatting**, @mentions, #1234 refs
+- [v] normal **formatting**, @mentions, #1234 refs
 - [ ] incomplete
 
 ### Inline LaTeX
