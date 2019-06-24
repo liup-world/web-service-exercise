@@ -58,7 +58,6 @@ You can also create a link to another note: (Note menu -> Copy Note Link -> Past
 - [ ] normal **formatting**, @mentions, #1234 refs
 - [ ] incomplete
 - [x] completed
-
 - (x) normal **formatting**, @mentions, #1234 refs
 - ( ) incomplete
 
